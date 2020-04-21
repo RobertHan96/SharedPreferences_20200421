@@ -10,6 +10,8 @@ class MainActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        setupEvents()
+        setValue()
     }
 
     override fun setupEvents() {
@@ -23,6 +25,7 @@ class MainActivity : BaseActivity() {
 
     override fun setValue() {
 
+        idEdt.setText(ContextUtil.getUserId(mContext))
 
     }
 }
