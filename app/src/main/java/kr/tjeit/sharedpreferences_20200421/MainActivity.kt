@@ -2,6 +2,8 @@ package kr.tjeit.sharedpreferences_20200421
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import kotlinx.android.synthetic.main.activity_main.*
+import kr.tjeit.sharedpreferences_20200421.utils.ContextUtil
 
 class MainActivity : BaseActivity() {
 
@@ -12,9 +14,15 @@ class MainActivity : BaseActivity() {
 
     override fun setupEvents() {
 
+        loginBtn.setOnClickListener {
+            val inputId = idEdt.text.toString()
+            ContextUtil.setUserId(mContext, inputId)
+        }
+
     }
 
     override fun setValue() {
+
 
     }
 }
