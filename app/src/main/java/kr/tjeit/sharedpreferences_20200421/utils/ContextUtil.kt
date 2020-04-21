@@ -8,10 +8,10 @@ class ContextUtil {
     companion object {
 
 //      메모장의 파일명에 대응되는 개념.
-        val prefName = "MyPref" // 프로젝트별로 맞는 이름으로 작명.
+        private val prefName = "MyPref" // 프로젝트별로 맞는 이름으로 작명.
 //      메모장에 저장될 항목의 이름.
-        val USER_ID = "USER_ID"
-        val ID_SAVE = "ID_SAVE"
+        private val USER_ID = "USER_ID"
+        private val ID_SAVE = "ID_SAVE"
 
 //    setter : 데이터 저장용 함수
         fun setUserId (context:Context, inputId:String) {
